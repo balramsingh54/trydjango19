@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+</head>
+<body>
+	<h1>{{ title }} is working</h1>
+
+
+	{% for obj in object_list %}
+		
+		{{ obj.title }}<br>
+		{{ obj.content }}<br>
+		{{ obj.update }}<br>
+		{{ obj.timestamp }}<br>
+		{{ obj.id }}<br>
+	
+	{% endfor %}	
+
+
+</body>
+</html>

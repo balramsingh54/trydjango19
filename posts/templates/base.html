@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+</head>
+<body>
+	<div class="container">
+		{% block content %}
+		<h1>{{ title }} is working</h1>
+			this is parent
+		{% for obj in object_list %}
+		{{ obj.title }}<br>
+		{{ obj.content }}<br>
+		{{ obj.update }}<br>
+		{{ obj.timestamp }}<br>
+		{{ obj.id }}<br>
+		{% endfor %}	
+
+		{% endblock content %}
+	</div>
+	
+
+
+
+
+</body>
+</html>
